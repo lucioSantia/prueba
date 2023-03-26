@@ -1,3 +1,8 @@
+import { Fragment } from "react";
+import React from "react";
+import SideBar from "../../components/sideBar/SideBar";
+import style from "../../components/sideBar/SideBar.module.css"
+
 const Home = () => {
   return (
     <>
@@ -15,9 +20,15 @@ const Home = () => {
       </h2>
       <h2> una sideBar de filtros </h2>
       <h2>footer</h2>
-  
-     
-    </>
+    
+<Fragment>
+<div className={style.side}>
+        
+        <SideBar />
+       
+      </div>
+</Fragment>
+</>
   );
 };
 
